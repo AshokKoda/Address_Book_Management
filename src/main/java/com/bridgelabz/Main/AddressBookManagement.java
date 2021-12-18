@@ -26,6 +26,10 @@ public class AddressBookManagement {
 				System.out.println("Add New Contact");
 				contact.addContact();
 				break;
+			case 2:
+				System.out.println("Edit Contact");
+				contact.updatePerson();
+				break;
 			default:
 					exit = true;
 					System.out.println("Exit Choices");
