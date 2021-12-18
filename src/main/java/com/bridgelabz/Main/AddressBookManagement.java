@@ -30,9 +30,13 @@ public class AddressBookManagement {
 				System.out.println("Edit Contact");
 				contact.updatePerson();
 				break;
+			case 3:
+				System.out.println("Delete Contact");
+				contact.deletePerson();
+				break;
 			default:
 					exit = true;
-					System.out.println("Exit Choices");
+					System.out.println("Some thing wrong....");
 					break;
 			}
 		}

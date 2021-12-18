@@ -124,4 +124,22 @@ public class ContactImplement implements IContact {
 		
 	}
 
+	/*
+	 * Delete contact using name
+	 */
+	public void deletePerson() {
+		
+		System.out.println("Enter the person name for delete");
+		Scanner sc = new Scanner(System.in);
+		String fname = sc.next();
+		
+		if (fname.equals(person.getFirstName())) {
+			person.setFirstName(null);
+			System.out.println("Contact deleted successfully...");
+		} else {
+			System.out.println("Contact not found");
+		}
+		
+	}
+
 }
